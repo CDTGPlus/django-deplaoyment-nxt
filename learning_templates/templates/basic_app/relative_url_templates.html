@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Welcome to relative URL templates!</h1>
+        <!--Note: Space before or after url object consideration within the brackets will lead to an error-->
+        <a href="{% url 'basic_app:other' %}">The other page!</a>
+        <br>
+        <!--Note: When implementing admin, make sure to conduct an initial migration first-->
+        <a href="{% url 'admin:index' %}">Link to ADMIN</a>
+        <br>
+        <a href="{% url 'index' %}">Link to Index</a>
+    </body>
+</html>

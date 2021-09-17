@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--extedn base template-->
+{% extends "basic_app/base.html" %}
+<!--load custom filter-->
+{% load my_extras %}
+
+    {% block body_block %}
+        <h1>WLCOME TO INDEX</h1>
+        <h2>This is index.html showing!</h2>
+        <!--utilize custom filter function-->
+        <h2>{{ text|cut:'World'  }}</h2>
+        <h2>{{ number|add:"99" }}</h2>
+    {% endblock %}
